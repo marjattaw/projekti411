@@ -1,0 +1,83 @@
+/* Yleiset tyylit */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #ffe4e1; /* Hempeä roosan sävy */
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+p {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+}
+
+form {
+    max-width: 600px; /* Maksimileveys lomakkeelle */
+    width: 80%; /* Leveys 80% näkymän leveydestä */
+    margin: 20px auto; /* Keskittää lomakkeen ja lisää ylä- ja alatyhjää */
+    padding: 20px 30px; /* Lisää tilaa vasemmalle ja oikealle */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Radio- ja checkbox-elementit samalle riville */
+.radio-group, .checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Väli valintanappien ja tekstien välillä */
+    margin-bottom: 10px;
+}
+
+.radio-group label, .checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Virheilmoitusten tyyli */
+.error {
+    color: red;
+    font-size: 0.9em;
+}
